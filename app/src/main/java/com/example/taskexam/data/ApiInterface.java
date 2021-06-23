@@ -6,8 +6,11 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
-    @GET("cars?page=1")
-    public Call<List<Car>> getCars();
+    @GET("cars")
+    public Call<List<Car>> getCars(@Query("page")String page);
+
+
 }
