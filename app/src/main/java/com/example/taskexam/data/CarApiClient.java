@@ -31,6 +31,6 @@ public class CarApiClient {
     }
 
     public Call<List<Car>> getCars(){
-        return apiInterface.getCars("1");
+        return apiInterface.getCars(1);
     }
 }

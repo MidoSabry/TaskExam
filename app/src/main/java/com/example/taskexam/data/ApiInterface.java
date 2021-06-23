@@ -10,7 +10,7 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
     @GET("cars")
-    public Call<List<Car>> getCars(@Query("page")String page);
+    public Call<List<Car>> getCars(@Query("page")int page);
 
 
 }
